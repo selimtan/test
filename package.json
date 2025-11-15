@@ -1,0 +1,29 @@
+{
+  "name": "utopia-database-ts",
+  "version": "0.1.0",
+  "description": "TypeScript port of the Utopia database library for Node.js",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "lint": "eslint --ext .ts src",
+    "test": "npm run build && node dist/examples/run-tests.js"
+  },
+  "keywords": [
+    "utopia",
+    "database",
+    "typescript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.0",
+    "typescript": "^5.4.5"
+  }
+}
